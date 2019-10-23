@@ -7,7 +7,7 @@
 
 var Gui = module.exports = {};
 
-const dat = require('../../node_modules/dat.gui/build/dat.gui.min');
+const dat = require('dat.gui');
 const ToolsCommon = require('./Common');
 const Serializer = require('matter-tools').Serializer;
 const Matter = require('matter-js');
