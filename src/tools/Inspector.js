@@ -7,7 +7,7 @@
 
 const Inspector = module.exports = {};
 const $ = require('jquery');
-require('../../node_modules/jstree/dist/jstree.min');
+require('jstree');
 const ToolsCommon = require('./Common');
 const Serializer = require('matter-tools').Serializer;
 const km = require('keymaster');
@@ -93,7 +93,7 @@ Inspector.create = function(engine, render, options) {
   engine.world.isModified = true;
   engine.world.parent = null;
 
-  let styles = require('../../node_modules/jstree/dist/themes/default/style.css');
+  let styles = require('/node_modules/jstree/dist/themes/default/style.css');
   ToolsCommon.injectStyles(styles, 'js-tree-style');
 
   styles = require('../styles/inspector.css');
